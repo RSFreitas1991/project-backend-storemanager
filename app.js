@@ -20,6 +20,15 @@ app.get('/products/:id', async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 });
+app.get('/products', async (req, res) => {
+  try {
+    const sql = 'select * from StoreManager.products;';
+    const result = await db.query(sql);
+    res.json(result);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
 
 // não remova esse endpoint, é para o avaliador funcionar
 app.get('/', (_request, response) => {
