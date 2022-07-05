@@ -15,7 +15,8 @@ app.get('/products/:id', async (req, res) => {
     const id = Number(req.params.id);
     const sql = `select * from StoreManager.products where id = ${id};`;
     const result = await db.query(sql);
-    res.json(result);
+    if (result[0].length === 0) return res.status(404).json({ message: 'Product not found' });
+    res.json(result[0][0]);
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
@@ -24,7 +25,7 @@ app.get('/products', async (req, res) => {
   try {
     const sql = 'select * from StoreManager.products;';
     const result = await db.query(sql);
-    res.json(result);
+    res.json(result[0]);
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
