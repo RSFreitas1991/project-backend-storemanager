@@ -1,10 +1,12 @@
 const express = require('express');
-const productsModel = require('./models/productsModel');
+const productsRoute = require('./routes/productsRoute');
 
 const app = express();
 app.use(express.json());
 
-app.get('/products/:id', async (req, res) => {
+app.use('/products', productsRoute);
+
+/* app.get('/products/:id', async (req, res) => {
   try {
     const id = Number(req.params.id);
     const product = await productsModel.getProductById(id);
@@ -21,7 +23,7 @@ app.get('/products', async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
-});
+}); */
 
 // não remova esse endpoint, é para o avaliador funcionar
 app.get('/', (_request, response) => {
