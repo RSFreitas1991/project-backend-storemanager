@@ -6,25 +6,6 @@ app.use(express.json());
 
 app.use('/products', productsRoute);
 
-/* app.get('/products/:id', async (req, res) => {
-  try {
-    const id = Number(req.params.id);
-    const product = await productsModel.getProductById(id);
-    if (product.length === 0) return res.status(404).json({ message: 'Product not found' });
-    res.json(product[0]);
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
-});
-app.get('/products', async (req, res) => {
-  try {
-    const products = await productsModel.getAllProducts();
-    res.json(products);
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
-}); */
-
 // não remova esse endpoint, é para o avaliador funcionar
 app.get('/', (_request, response) => {
   response.send();

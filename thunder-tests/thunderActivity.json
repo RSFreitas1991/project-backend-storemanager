@@ -8,7 +8,7 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2022-07-05T13:02:02.335Z",
-    "modified": "2022-07-06T18:06:57.991Z",
+    "modified": "2022-07-06T18:22:25.209Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -46,13 +46,18 @@
     "colId": "history",
     "containerId": "",
     "name": "localhost:3000/products/999",
-    "url": "localhost:3000/products/999",
-    "method": "GET",
+    "url": "localhost:3000/products/",
+    "method": "POST",
     "sortNum": 0,
     "created": "2022-07-05T13:24:09.910Z",
-    "modified": "2022-07-06T18:08:44.266Z",
+    "modified": "2022-07-06T18:44:38.089Z",
     "headers": [],
     "params": [],
+    "body": {
+      "type": "json",
+      "raw": "  {\n    \"name\": \"ProdutoX\"\n  }",
+      "form": []
+    },
     "tests": []
   },
   {

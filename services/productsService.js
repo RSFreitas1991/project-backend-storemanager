@@ -13,6 +13,10 @@ const productsService = {
     const list = await productsModel.getAllProducts();
     return list;
   },
+  async addProductToList(product) {
+    const included = await productsModel.addProduct(product);
+    return included;
+  },
 };
 
 module.exports = productsService;
