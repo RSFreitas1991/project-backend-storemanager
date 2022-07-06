@@ -5,6 +5,18 @@ const productsService = {
     const product = await productsModel.getProductById(id);
     if (product.length === 0) throw new Error('Product not found');
   },
+  async checkName(name) {
+    if (name === undefined) {
+      const error = new Error('"name" is required');
+      error.code = 400;
+      throw error;
+    }
+    if (name.length < 5) {
+      const error = new Error('"name" length must be at least 5 characters long');
+      error.code = 422;
+      throw error;
+    }
+  },
   async getProduct(id) {
     const product = await productsModel.getProductById(id);
     return product[0];

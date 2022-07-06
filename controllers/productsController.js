@@ -16,10 +16,15 @@ const productsController = {
     res.json(productsList);
   },
   async addProduct(req, res) {
-    const product = req.body;
-    await productsService.addProductToList(product.name);
-    const productsList = await productsService.getProductList();
-    res.status(201).json(productsList[productsList.length - 1]);
+    try {
+      const product = req.body;
+      await productsService.checkName(product.name);
+      await productsService.addProductToList(product.name);
+      const productsList = await productsService.getProductList();
+      res.status(201).json(productsList.pop());
+    } catch (error) {
+      res.status(error.code).json({ message: error.message });
+    }
   },
 };
 
