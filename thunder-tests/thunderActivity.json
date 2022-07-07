@@ -102,12 +102,12 @@
     "method": "POST",
     "sortNum": 0,
     "created": "2022-07-06T21:15:29.212Z",
-    "modified": "2022-07-06T21:25:49.521Z",
+    "modified": "2022-07-07T00:06:23.920Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "  [\n    {\n      \"productId\": 1,\n      \"quantity\":1\n    }\n ]",
+      "raw": "  [\n    {\n      \"productId\": 1,\n      \"quantity\":1\n    },\n    {\n      \"productId\": 2,\n      \"quantity\":5\n    }\n  ]",
       "form": []
     },
     "tests": []

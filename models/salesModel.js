@@ -11,14 +11,24 @@ const addProductSale = async (product) => {
   return result;
 };
 
-const addSale = async (product) => {
+const addSale = async () => {
   const sql = 'INSERT INTO StoreManager.sales (date) VALUES (NOW());';
+  await connection.query(sql);
+  const getSaleId = 'select * from StoreManager.sales;';
+  const saleList = await connection.query(getSaleId);
+  const lastSale = saleList[0].pop();
+  const { id } = lastSale;
+  return id;
+};
+
+const getAllProductsId = async () => {
+  const sql = 'select * from StoreManager.products;';
   const result = await connection.query(sql);
-  await addProductSale(product);
   return result;
 };
 
 module.exports = {
   addSale,
   addProductSale,
+  getAllProductsId,
 };
