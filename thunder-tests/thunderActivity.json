@@ -111,5 +111,62 @@
       "form": []
     },
     "tests": []
+  },
+  {
+    "_id": "cef98928-d7d8-4751-80bb-129159ac433a",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3000/sales/1",
+    "url": "localhost:3000/sales/1",
+    "method": "PUT",
+    "sortNum": 0,
+    "created": "2022-07-08T14:15:56.249Z",
+    "modified": "2022-07-08T14:15:56.292Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "  {\n    \"name\": \"Martelo do Batman\"\n  }",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "c1f37d69-a0d4-47f1-ba07-bedf18d38f3b",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3000/products/1",
+    "url": "localhost:3000/products/1",
+    "method": "PUT",
+    "sortNum": 0,
+    "created": "2022-07-08T14:16:07.489Z",
+    "modified": "2022-07-08T14:19:02.509Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "  {\n    \"name\": \"Martelo do Batman\"\n  }",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "e9d3a2d9-398e-431f-9e02-b4b1c5a59e19",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3000/products/99",
+    "url": "localhost:3000/products/99",
+    "method": "PUT",
+    "sortNum": 0,
+    "created": "2022-07-08T14:19:06.350Z",
+    "modified": "2022-07-08T14:22:43.894Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "  {\n    \"name\": \"Martelo do Batman\"\n  }",
+      "form": []
+    },
+    "tests": []
   }
 ]

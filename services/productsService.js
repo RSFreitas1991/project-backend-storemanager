@@ -3,7 +3,11 @@ const productsModel = require('../models/productsModel');
 const productsService = {
   async checkId(id) {
     const product = await productsModel.getProductById(id);
-    if (product.length === 0) throw new Error('Product not found');
+    if (product.length === 0) {
+      const error = new Error('Product not found');
+      error.code = 404;
+      throw error;
+    }
   },
   async checkName(name) {
     if (name === undefined) {
@@ -28,6 +32,11 @@ const productsService = {
   async addProductToList(product) {
     const included = await productsModel.addProduct(product);
     return included;
+  },
+  async updateProductNameById(name, id) {
+    await this.checkName(name);
+    const update = await productsModel.updateProductNameById(name, id);
+    return update;
   },
 };
 

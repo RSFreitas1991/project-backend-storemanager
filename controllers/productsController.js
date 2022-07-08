@@ -26,6 +26,17 @@ const productsController = {
       res.status(error.code).json({ message: error.message });
     }
   },
+  async updateProductNameById(req, res) {
+    try {
+      const { name } = req.body;
+      const id = Number(req.params.id);
+      await productsService.checkId(id);
+      await productsService.updateProductNameById(name, id);
+      res.status(200).json({ id, name });
+    } catch (error) {
+      res.status(error.code).json({ message: error.message });
+    }
+  },
 };
 
 module.exports = productsController;

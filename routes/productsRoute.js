@@ -4,6 +4,7 @@ const productController = require('../controllers/productsController');
 const productsRoute = Router();
 
 productsRoute.get('/:id', productController.getProductById);
+productsRoute.put('/:id', productController.updateProductNameById);
 productsRoute.get('/', productController.getList);
 productsRoute.post('/', productController.addProduct);
 
