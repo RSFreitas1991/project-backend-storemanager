@@ -19,6 +19,20 @@ const salesController = {
       res.status(error.code).json({ message: error.message });
     }
   },
+  async productSaleList(_req, res) {
+    const productsList = await salesService.getAllProductSales();
+    res.json(productsList);
+  },
+  async productSaleById(req, res) {
+    try {
+      const id = Number(req.params.id);
+      await salesService.saleIdExists(id);
+      const product = await salesService.getProductSalesById(id);
+      res.json(product);
+    } catch (error) {
+      res.status(404).json({ message: error.message });
+    }
+  },
 };
 
 module.exports = salesController;

@@ -1,6 +1,10 @@
 const salesModel = require('../models/salesModel');
 
 const salesService = {
+  async saleIdExists(id) {
+    const sale = await salesModel.getSaleById(id);
+    if (sale.length === 0) throw new Error('Sale not found');
+  },
   async addSale() {
     const included = await salesModel.addSale();
     return included;
@@ -41,6 +45,14 @@ const salesService = {
   },
   async getProductIdList() {
     const list = await salesModel.getAllProductsId();
+    return list[0];
+  },
+  async getAllProductSales() {
+    const list = await salesModel.getAllProductSales();
+    return list[0];
+  },
+  async getProductSalesById(id) {
+    const list = await salesModel.getProductSalesById(id);
     return list[0];
   },
 };
