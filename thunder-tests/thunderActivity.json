@@ -8,7 +8,7 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2022-07-05T13:02:02.335Z",
-    "modified": "2022-07-06T18:22:25.209Z",
+    "modified": "2022-07-10T21:39:20.531Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -79,11 +79,11 @@
     "colId": "history",
     "containerId": "",
     "name": "localhost:3000/sales",
-    "url": "localhost:3000/sales/1",
+    "url": "localhost:3000/sales/99",
     "method": "GET",
     "sortNum": 0,
     "created": "2022-07-06T21:14:17.028Z",
-    "modified": "2022-07-08T13:41:34.603Z",
+    "modified": "2022-07-10T22:24:22.720Z",
     "headers": [],
     "params": [],
     "body": {
