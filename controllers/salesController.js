@@ -21,7 +21,7 @@ const salesController = {
   },
   async productSaleList(_req, res) {
     const productsList = await salesService.getAllProductSales();
-    res.json(productsList);
+    res.status(200).json(productsList);
   },
   async productSaleById(req, res) {
     try {

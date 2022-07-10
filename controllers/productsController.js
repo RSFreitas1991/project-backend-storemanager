@@ -13,7 +13,7 @@ const productsController = {
   },
   async getList(_req, res) {
     const productsList = await productsService.getProductList();
-    res.json(productsList);
+    res.status(200).json(productsList);
   },
   async addProduct(req, res) {
     try {

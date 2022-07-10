@@ -8,6 +8,7 @@ const productsService = {
       error.code = 404;
       throw error;
     }
+    return true;
   },
   async checkName(name) {
     if (name === undefined) {
