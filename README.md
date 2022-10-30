@@ -6,8 +6,14 @@ O objetivo deste projeto é a criação de um CRUDE em uma API REST que simula a
 
 ## Rotas disponíveis
 
-> http://localhost:3000/products  
-> http://localhost:3000/sales
+> GET: http://localhost:3000/products  
+> GET: http://localhost:3000/products/:id  
+> PUT: http://localhost:3000/products/:id 
+> DELETE: http://localhost:3000/products/:id 
+> POST: http://localhost:3000/products/  
+> GET: http://localhost:3000/sales/:id 
+> GET: http://localhost:3000/sales/   
+> POST: http://localhost:3000/sales/:id  
 
 ## Técnologias usadas
 
