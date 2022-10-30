@@ -1,10 +1,33 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# Store Manager
+
+# Contexto
+O objetivo deste projeto é a criação de um aplicativo mobile de receitas consumindo uma API pública.
+>O projeto possui testes unitários utilizando Chai, Sinon, Mocha e Jest.
+
+## Técnologias usadas
+
+> Desenvolvido usando: Express.JS, mySQL, ES6, Chai, Sinon, Mocha e Jest.
+
+## Instalando Dependências
+
+```bash
+cd src/
+npm install
+``` 
+## Executando aplicação
+
+> Deve ser configurado um arquivo .env com as seguintes variáveis de ambiente:
+MYSQL_HOST,
+MYSQL_USER,
+MYSQL_PASSWORD,
+MYSQL_DATABASE,
+
+  ```
+    cd src/ && npm start
+  ```
+
+## Executando os testes unitários
+
+  ```
+    cd src/ && npm test:mocha
+  ```
