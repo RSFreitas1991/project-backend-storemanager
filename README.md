@@ -17,10 +17,10 @@ npm install
 ## Executando aplicação
 
 > Deve ser configurado um arquivo .env com as seguintes variáveis de ambiente:
-MYSQL_HOST,
-MYSQL_USER,
-MYSQL_PASSWORD,
-MYSQL_DATABASE,
+MYSQL_HOST,  
+MYSQL_USER,  
+MYSQL_PASSWORD,  
+MYSQL_DATABASE,  
 
   ```
     cd src/ && npm start
