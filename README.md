@@ -1,7 +1,7 @@
 # Store Manager
 
 # Contexto
-O objetivo deste projeto é a criação de um CRUDE em uma API REST que simula a gestão de uma loja fictícia.
+O objetivo deste projeto é a criação de um CRUD em uma API REST que simula a gestão de uma loja fictícia.
 >O projeto possui testes unitários utilizando Chai, Sinon, Mocha e Jest.
 
 ## Rotas disponíveis
