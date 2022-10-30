@@ -22,7 +22,6 @@ O objetivo deste projeto é a criação de um CRUDE em uma API REST que simula a
 ## Instalando Dependências
 
 ```bash
-cd src/
 npm install
 ``` 
 ## Executando aplicação
@@ -34,11 +33,11 @@ MYSQL_PASSWORD,
 MYSQL_DATABASE,
 
   ```
-    cd src/ && npm migration && npm seed && npm start
+npm migration && npm seed && npm start
   ```
 
 ## Executando os testes unitários
 
   ```
-    cd src/ && npm test:mocha
+ npm test:mocha
   ```
