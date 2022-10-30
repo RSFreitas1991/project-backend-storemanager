@@ -23,7 +23,7 @@ MYSQL_PASSWORD,
 MYSQL_DATABASE,
 
   ```
-    cd src/ && npm start
+    cd src/ && npm migration && npm seed && npm start
   ```
 
 ## Executando os testes unitários
