@@ -7,7 +7,6 @@ O objetivo deste projeto é a criação de um aplicativo mobile de receitas cons
 ## Rotas disponíveis
 
 > http://localhost:3000/products  
->> get: "/:id"
 > http://localhost:3000/sales
 
 ## Técnologias usadas
